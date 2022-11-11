@@ -1,0 +1,25 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+    margin: 3em;
+    background-color: ivory;
+    color: navy;
+}
+nav {
+    font-size: 12pt;
+    background-color: navy;
+    color: ivory;
+}
+footer {
+    font-size: 12pt;
+    background-color: navy;
+    color: ivory;
+}
+a:link {
+    color: ivory;
+    text-decoration: none;
+}
+a:visited {
+color: ivory;
+text-decoration: none;
+}
