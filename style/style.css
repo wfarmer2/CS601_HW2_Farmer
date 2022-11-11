@@ -1,25 +1,47 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16pt;
     margin: 3em;
     background-color: ivory;
     color: navy;
 }
-nav {
-    font-size: 12pt;
+.navbar {
+    overflow: hidden;
     background-color: navy;
+}
+.navbar a {
+    font-size: 14pt;
+    float: left;
+    display: block;
     color: ivory;
+    text-align: justify;
+    padding: 10pt 14pt;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: gainsboro;
+    color: navy;
 }
 footer {
     font-size: 12pt;
+    color: ivory;
     background-color: navy;
-    color: ivory;
 }
-a:link {
+.footbar a:link {
     color: ivory;
-    text-decoration: none;
+    text-decoration: underline;
 }
-a:visited {
-color: ivory;
-text-decoration: none;
+.footbar a:visited {
+color: darkgray;
+text-decoration: underline;
+}
+@media screen and (max-width: 600px) {
+    .navbar a {
+      float: left;
+      width: 100%;
+    }
+    .footbar {
+      float: left;
+      width: 100%;
+    }
 }
