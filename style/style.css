@@ -37,10 +37,10 @@ body {
     padding: 10px;
 }
 .column.side {
-    width: 25%;
+    width: 20%;
 }
 .column.middle {
-    width: 50%;
+    width: 75%;
 }
 .row:after {
     content: "";
@@ -66,6 +66,11 @@ text-decoration: underline;
     float: left;
     color: var(--main-color);
     text-align: center;
+    padding: 10pt;
+    margin: auto;
+}
+#bu_logo {
+    float: right;
 }
 /* media sizing styling */
 @media screen and (max-width: 600px) {
@@ -75,7 +80,14 @@ text-decoration: underline;
     }
     .column.side, .column.middle {
         width: 100%;
-      }
+    }
+    #introduction {
+        float: left;
+        font-size: 12pt;
+        max-width: 600pt;
+        max-height: 800pt;
+        overflow: hidden;
+    }
     .footbar {
       float: left;
       width: 100%;
