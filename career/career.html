@@ -8,7 +8,7 @@
         <link href="../style/style.css" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header class="header">
             <h1>Welcome to My Personal Journey</h1>
             <!-- Navigation bar for website -->
             <nav class="navbar">
@@ -19,10 +19,13 @@
             </nav>
         </header>
         <!-- Section for William Farmer Career Background Information -->
-        <section class="william farmer career background">
-            <h2>Career Background</h2>
+        <div class="row">
+            <section class="column side" id="gm_logo">
                 <span title="General Motors logo"><img src="../images/gm_logo.png" alt="General Motors company logo" 
                 width="125" height="125"></span>
+            </section>
+            <section class="column middle" id="career_background">
+                <h2>Career Background</h2>
                     <p>
                         After completing my undergraduate degrees from Arizona State University (ASU), I started my
                         career in June 2020 for General Motors located in Chandler, Arizona at the company's Arizona 
@@ -35,22 +38,27 @@
                         company's organization to build better systems. Utilizing my technical knowledge and ability to communicate to stakeholders in the company
                         is something that I am excited for in my career journey!
                     </p>
-        </section>
-        <!-- Section for William Farmer Career Goals Information -->
-        <section class="william farmer career goals">
-            <h2>Future Career Goals</h2>
-                <p>As I transition into a <em>Business Analyst</em> role, these are my goals that I hope to achieve.</p>
-                <ul>
-                    <li>Gain understanding of business processes currently being done in the SCWL space</li>
-                    <li>Effectively communicate between all stakeholders to build coherent systems for the organization</li>
-                    <li>Personal growth in communication to drive ideas into actionable results and products for the organization</li>
-                    <li>Foster an ennvironment that promotes Agile development and thinking</li>
-                </ul>
-        </section>
-        <section class="general motors AIC video">
-            <h2>Discover More About GM's Arizona IT Innovation Center</h2>
-               <embed src="https://www.youtube.com/embed/mGUEk2tYydU" width="560" height="320">
-        </section>
+            </section>
+            <!-- Section for William Farmer Career Goals Information -->
+            <section class="column middle" id="career_goals">
+                <hr class="solid">
+                <h2>Future Career Goals</h2>
+                    <p>As I transition into a <em>Business Analyst</em> role, these are my goals that I hope to achieve.</p>
+                    <ul>
+                        <li>Gain understanding of business processes currently being done in the SCWL space</li>
+                        <li>Effectively communicate between all stakeholders to build coherent systems for the organization</li>
+                        <li>Personal growth in communication to drive ideas into actionable results and products for the organization</li>
+                        <li>Foster an ennvironment that promotes Agile development and thinking</li>
+                    </ul>
+            </section>
+        </div>
+        <hr class="solid">
+        <div>
+            <section class="bottom" id="gm_video">
+                <h2>Discover More About GM's Arizona IT Innovation Center</h2>
+                <embed src="https://www.youtube.com/embed/mGUEk2tYydU" width="560" height="320">
+            </section>
+        </div>
         <!-- Contact Information footer for website -->
         <footer class="footbar">
             <h3>Contact and GitHub Information</h3>

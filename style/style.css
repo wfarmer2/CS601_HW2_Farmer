@@ -15,6 +15,22 @@ body {
     background-color: var(--secondary-color);
     color: var(--main-color);
 }
+div {
+    width: 850pt;
+    padding: 25pt;
+}
+ul {
+    list-style-type: square;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+}
+li {
+    text-align: left;
+}
+.solid {
+    border-top: 3pt solid var(--tertiary-color);
+}
 .navbar {
     overflow: hidden;
     background-color: var(--main-color);
@@ -41,6 +57,10 @@ body {
 }
 .column.middle {
     width: 75%;
+}
+.bottom {
+    width: 100%;
+    text-align: center;
 }
 .row:after {
     content: "";
@@ -71,6 +91,11 @@ text-decoration: underline;
 }
 #bu_logo {
     float: right;
+    padding-top: 25pt;
+}
+#career_goals {
+    width: 100%;
+    text-align: justify;
 }
 /* media sizing styling */
 @media screen and (max-width: 600px) {
