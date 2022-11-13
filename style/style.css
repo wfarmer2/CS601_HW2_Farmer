@@ -1,47 +1,96 @@
+/* global color variables */
+:root {
+    --main-color: navy;
+    --secondary-color: ivory;
+    --tertiary-color: gainsboro;
+}
+/* general and class styling */
+.header {
+    text-align: center;
+}
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     font-size: 16pt;
     margin: 3em;
-    background-color: ivory;
-    color: navy;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
 }
 .navbar {
     overflow: hidden;
-    background-color: navy;
+    background-color: var(--main-color);
 }
 .navbar a {
     font-size: 14pt;
     float: left;
     display: block;
-    color: ivory;
-    text-align: justify;
-    padding: 10pt 14pt;
+    color: var(--secondary-color);
+    text-align: center;
     text-decoration: none;
+    width: 25%; 
 }
 .navbar a:hover {
-    background-color: gainsboro;
-    color: navy;
+    background-color: var(--tertiary-color);
+    color: var(--main-color);
+}
+.column {
+    float: left;
+    padding: 10px;
+}
+.column.side {
+    width: 25%;
+}
+.column.middle {
+    width: 50%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 .footbar {
     font-size: 12pt;
-    color: ivory;
-    background-color: navy;
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    text-align: center;
 }
 .footbar a:link {
-    color: ivory;
+    color: var(--secondary-color);
     text-decoration: underline;
 }
 .footbar a:visited {
-color: darkgray;
+color: var(--secondary-color);
 text-decoration: underline;
 }
+/* id styling */
+#introduction {
+    float: left;
+    color: var(--main-color);
+    text-align: center;
+}
+/* media sizing styling */
 @media screen and (max-width: 600px) {
     .navbar a {
       float: left;
       width: 100%;
     }
+    .column.side, .column.middle {
+        width: 100%;
+      }
     .footbar {
       float: left;
       width: 100%;
     }
+}
+@media screen and (max-width: 992px) {
+    .navbar a {
+        float: left;
+        width: 100%;
+      }
+      .column.side, .column.middle {
+          width: 50%;
+        }
+      .footbar {
+        float: left;
+        width: 50%;
+      }
 }

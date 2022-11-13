@@ -8,7 +8,7 @@
         <link href="../style/style.css" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header class="header">
             <h1>Welcome to My Personal Journey</h1>
             <!-- Navigation bar for website -->
             <nav class="navbar">
@@ -19,17 +19,21 @@
             </nav>
         </header>
         <!-- Section for William Farmer Introduction -->
-        <section class="william farmer introduction">
-            <h2>Who am I?</h2>
+        <div class="row">
+            <section class="column side" id="profile_picture">
                 <span title="Picture of William Farmer"><img src="../images/william_farmer_profile_pic.jpg" alt="A professional picture of William Farmer wearing a suit" 
-                width="250" height="250"></span>
+                    width="300" height="300"></span>
+            </section>
+            <section class="column middle" id="introduction">
+                <h2>Who am I?</h2>
                     <p>
                         My name is <strong>William Farmer</strong> and I am a young professional within the technology and supply chain
                         industries, respectively. On this website, there is information about my educational background, current career path
                         with future goals, and lastly some of my hobbies that I take part in. I encourage you to explore the website to learn
                         more about me and what I've accomplished and hope to achieve in the future!
                     </p>
-        </section>
+            </section>
+        </div>
         <!-- Contact Information footer for website -->
         <footer class="footbar">
             <h3>Contact and GitHub Information</h3>
