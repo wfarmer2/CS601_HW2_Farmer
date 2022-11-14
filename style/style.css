@@ -14,6 +14,10 @@ body {
     margin: 3em;
     background-color: var(--secondary-color);
     color: var(--main-color);
+    text-align: justify;
+}
+h2 {
+    font-style: italic;
 }
 div {
     width: 850pt;
@@ -28,7 +32,7 @@ ul {
 li {
     text-align: left;
 }
-.solid {
+.solid_line {
     border-top: 3pt solid var(--tertiary-color);
 }
 .navbar {
@@ -72,14 +76,17 @@ li {
     color: var(--secondary-color);
     background-color: var(--main-color);
     text-align: center;
+    position: relative;
+    width:100%;
+    bottom:0px;
 }
 .footbar a:link {
     color: var(--secondary-color);
     text-decoration: underline;
 }
 .footbar a:visited {
-color: var(--secondary-color);
-text-decoration: underline;
+    color: var(--secondary-color);
+    text-decoration: underline;
 }
 /* id styling */
 #introduction {
@@ -89,7 +96,16 @@ text-decoration: underline;
     padding: 10pt;
     margin: auto;
 }
-#bu_logo {
+#profile_picture img{
+    float: left;
+    border-radius: 50%;
+}
+#asu_logo, #gm_logo {
+    float: left;
+    padding-top: 25pt;
+    padding-left: 5pt;
+}
+#bu_logo, #suns_logo {
     float: right;
     padding-top: 25pt;
 }
@@ -97,37 +113,44 @@ text-decoration: underline;
     width: 100%;
     text-align: justify;
 }
+#hobbies_table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+#hobbies_table td, th {
+    border: 1pt solid var(--secondary-color);
+    padding: 8pt;
+}
+#hobbies_table tr:hover {
+    background-color: var(--tertiary-color)
+}
+#hobbies_table th {
+    padding-top: 12pt;
+    padding-bottom: 12pt;
+    text-align: center;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+}
 /* media sizing styling */
 @media screen and (max-width: 600px) {
+    body {
+        font-size: 10pt;
+    }
     .navbar a {
-      float: left;
-      width: 100%;
+        float: none;
+        width: 100%;
+    }
+    img {
+        align-self: center;
+        width:100%;
+        max-width:250px;
     }
     .column.side, .column.middle {
         width: 100%;
     }
-    #introduction {
-        float: left;
-        font-size: 12pt;
-        max-width: 600pt;
-        max-height: 800pt;
-        overflow: hidden;
-    }
     .footbar {
-      float: left;
-      width: 100%;
-    }
-}
-@media screen and (max-width: 992px) {
-    .navbar a {
-        float: left;
+        float: none;
         width: 100%;
-      }
-      .column.side, .column.middle {
-          width: 50%;
-        }
-      .footbar {
-        float: left;
-        width: 50%;
-      }
+    }
 }
