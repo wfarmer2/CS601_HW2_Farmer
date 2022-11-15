@@ -4,8 +4,15 @@
     --secondary-color: ivory;
     --tertiary-color: gainsboro;
 }
-/* general and class styling */
-.header {
+/* header and body styling */
+h1 {
+    text-align: center;
+    letter-spacing: .25em;
+    text-shadow: 5px 10px 1px var(--tertiary-color);
+}
+h2 {
+    font-style: italic;
+    font-weight: lighter;
     text-align: center;
 }
 body {
@@ -16,25 +23,35 @@ body {
     color: var(--main-color);
     text-align: justify;
 }
-h2 {
-    font-style: italic;
+/* paragraph styling */
+p {
+    font-family:Arial, Helvetica, sans-serif;
 }
+/* a tag styling */
+a {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+/* div styling */
 div {
-    width: 850pt;
-    padding: 25pt;
+    width: 55em;
+    padding: 10px;
 }
+/* list styling */
 ul {
     list-style-type: square;
     list-style-position: inside;
-    margin: 0;
-    padding: 0;
+    margin: 0em;
+    padding: 0px;
 }
 li {
     text-align: left;
 }
+/* page divider line styling */
 .solid_line {
     border-top: 3pt solid var(--tertiary-color);
 }
+/* nav bar styling */
 .navbar {
     overflow: hidden;
     background-color: var(--main-color);
@@ -48,10 +65,12 @@ li {
     text-decoration: none;
     width: 25%; 
 }
-.navbar a:hover {
+/* link hovering styling */
+a:hover {
     background-color: var(--tertiary-color);
     color: var(--main-color);
 }
+/* page column and row styling */
 .column {
     float: left;
     padding: 10px;
@@ -71,6 +90,7 @@ li {
     display: table;
     clear: both;
 }
+/* footer styling */
 .footbar {
     font-size: 12pt;
     color: var(--secondary-color);
@@ -88,12 +108,12 @@ li {
     color: var(--secondary-color);
     text-decoration: underline;
 }
-/* id styling */
+/* specific id element styling */
 #introduction {
     float: left;
     color: var(--main-color);
     text-align: center;
-    padding: 10pt;
+    padding: 10px;
     margin: auto;
 }
 #profile_picture img{
@@ -102,12 +122,12 @@ li {
 }
 #asu_logo, #gm_logo {
     float: left;
-    padding-top: 25pt;
-    padding-left: 5pt;
+    padding-top: 25px;
+    padding-left: 25px;
 }
 #bu_logo, #suns_logo {
     float: right;
-    padding-top: 25pt;
+    padding-top: 25px;
 }
 #career_goals {
     width: 100%;
@@ -117,22 +137,23 @@ li {
     border-collapse: collapse;
     margin-left: auto;
     margin-right: auto;
+    width: 50%;
 }
 #hobbies_table td, th {
     border: 1pt solid var(--secondary-color);
-    padding: 8pt;
+    padding: 8px;
 }
 #hobbies_table tr:hover {
     background-color: var(--tertiary-color)
 }
 #hobbies_table th {
-    padding-top: 12pt;
-    padding-bottom: 12pt;
+    padding-top: 12px;
+    padding-bottom: 12px;
     text-align: center;
     background-color: var(--main-color);
     color: var(--secondary-color);
 }
-/* media sizing styling - Phone Portrait*/
+/* media sizing styling - amartphone portrait size*/
 @media screen and (max-width: 375px) {
     div {
         width: auto;
@@ -146,19 +167,32 @@ li {
     .navbar a {
         float: none;
         width: 100%;
+        font-size: 10pt;
     }
-    img {
+    #profile_picture, #bu_logo, 
+    #asu_logo, #gm_logo, #suns_logo {
         float: none;
         align-self: auto;
         width:100%;
-        max-width:150px;
+        max-width:250px;
+        margin: auto;
+        padding: 0px;
+    }
+    #asu_logo {
+        padding-left: 60px;
+    }
+    #bu_logo {
+        padding-left: 30px;
+    }
+    #gm_logo {
+        padding-left: 100px;
     }
     embed {
         width: auto;
         height: auto;
     }
-    table {
-        width: 10%;
+    #hobbies_table {
+        width: 100%;
     }
     .row {
         width: auto;
@@ -169,12 +203,13 @@ li {
     .column.side, .column.middle {
         width: auto;
     }
-    .footbar {
+    .footbar, .footbar h3 {
         float: none;
         align-self: auto;
+        font-size: 10pt;
     }
 }
-/* media sizing styling - Tablet Portrait*/
+/* media sizing styling - tablet portrait size*/
 @media screen and (max-width: 728px) {
     div {
         width: auto;
@@ -188,19 +223,32 @@ li {
     .navbar a {
         float: none;
         width: 100%;
+        font-size: 12pt;
     }
-    img {
+    #profile_picture, #bu_logo, 
+    #asu_logo, #gm_logo, #suns_logo {
         float: none;
         align-self: auto;
         width:100%;
         max-width:250px;
+        margin: auto;
+        padding: 0px;
+    }
+    #asu_logo {
+        padding-left: 90px;
+    }
+    #bu_logo {
+        padding-left: 60px;
+    }
+    #gm_logo {
+        padding-left: 130px;
     }
     embed {
         width: auto;
         height: auto;
     }
-    table {
-        width: 25%;
+    #hobbies_table {
+        width: 100%;
     }
     .row {
         width: auto;
@@ -211,8 +259,9 @@ li {
     .column.side, .column.middle {
         width: auto;
     }
-    .footbar {
+    .footbar, .footbar h3 {
         float: none;
         align-self: auto;
+        font-size: 12pt;
     }
 }
